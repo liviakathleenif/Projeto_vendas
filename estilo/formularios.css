@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 25px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #8B8B8B, #a0a0a0, #c0c0c0, #8B8B8B);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.caixa-centro{
+    border: 2vh outset white;
+    position: relative;
+    padding: 2%;
+    display: flex;
+    position:absolute;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9d9d9;
+    border-radius: 2vh;
+    font-size: 3vh;
+}
+.caixa-centro a{
+    width: 45px;
+    height: 3.4vh;
+    cursor: pointer;
+}
+.campo-formulario{
+    margin: 1vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+input, textarea{
+    border-radius: 0.3vh;
+    max-width: 50vw;
+    font-size: 2vh;
+    border-width: 0.3vw;
+    background-color: white;
+    padding: 1vh;
+}
+button {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    border-radius: 0.95vh;
+    max-width: 50vw;
+    width: 45px;
+    font-size: 2vh;
+    height: 3.4vh;
+    background-color: white;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(-45deg, #8B8B8B, #a0a0a0, #c0c0c0, #8B8B8B);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+#botoes {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-top: 20vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#botoes a{
+    text-decoration: none;
+    margin: 10vh;
+}
+#botoes button{
+    color: black;
+    font-size: large;
+    cursor: alias;
+    justify-items: center;
+    width: 50vh;
+    height: 50vh;
+    transition: 0.3s ease, background 0.3s;
+}
+#botoes button:hover {
+    transform: scale(1.05) rotate(-1deg);
+    background: #8B8B8B;
+    color: white;
+}
+

@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(-45deg, #8B8B8B, #a0a0a0, #c0c0c0, #8B8B8B);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+nav {
+    background-color: rgb(139, 139, 139);
+    text-align: center;
+    color: white;
+    width: 100%;
+    min-width: 200px;
+    min-height: 50px;  
+    max-height: 80px; 
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+nav a{
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+}
+#principal {
+    margin: 4vh;
+    position: relative;
+    background-color: white;
+    border: 2vh outset white;
+}
